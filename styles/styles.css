@@ -1,0 +1,9 @@
+.page-header {
+  background-color: rgb(13, 72, 132);
+  height: 300px;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+}
