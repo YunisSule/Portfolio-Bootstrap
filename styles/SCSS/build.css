@@ -1,0 +1,18 @@
+.page-header {
+  background-image: url();
+  background-color: #312152;
+  background-size: cover;
+  height: 40vh;
+}
+.page-header .heading {
+  font-family: 'Gruppo';
+  text-align: center;
+  padding-top: 16vh;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+}
+
+/*# sourceMappingURL=build.css.map */
