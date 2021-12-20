@@ -1,6 +1,33 @@
+$primary-color: black;
+$red: rgb(186, 13, 13);
+$yellow: rgb(251, 151, 19);
+$blue: rgb(15, 55, 175);
+$shadow: 2px 2px 5px 0px black;
+
+@mixin theme($border-color: #fff, $background: none) {
+  border: 2px solid $border-color;
+  background: $background;
+  padding: 1em;
+  margin-top: 2em;
+  box-shadow: $shadow;
+  color: #fff;
+  min-width: 436px;
+}
+
+@mixin projects($border-color: none, $background: none) {
+  width: 18rem;
+  border: 2px solid $border-color;
+  background: $background;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  box-shadow: $shadow;
+  color: #fff;
+}
+
 .page-header {
   background-image: url();
-  background-color: rgb(49, 33, 82);
+  background-color: $primary-color;
   background-size: cover;
   height: 300px;
   .heading {
@@ -12,4 +39,81 @@
 h1 {
   color: aliceblue;
   text-align: center;
+}
+
+// Styling for about page
+
+#about {
+  background-image: url(/images/background-gradient-1.jpg);
+  background-size: cover;
+  background-position: center;
+  .summary {
+    @include theme($border-color: $red);
+    box-shadow: $shadow;
+  }
+  .skills {
+    @include theme($border-color: $yellow);
+    margin-bottom: 2em;
+    td {
+      padding: 0.5em;
+      img {
+        height: 50px;
+      }
+    }
+  }
+  .work-history {
+    @include theme($border-color: $blue);
+    margin-bottom: 2em;
+    * {
+      background: none;
+      color: #fff;
+    }
+  }
+}
+
+// Styling for projects page
+
+#projects {
+  background-image: url(/images/background-gradient-4.jpg);
+  background-size: cover;
+  background-position: center;
+  h4 {
+    color: #fff;
+    text-align: center;
+  }
+  .red {
+    @include projects($border-color: $red);
+  }
+  .blue {
+    @include projects($border-color: $blue);
+  }
+  .yellow {
+    @include projects($border-color: $yellow);
+  }
+}
+
+// Styling for contact page
+
+#contact {
+  background-image: url(/images/background-gradient-2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 2em;
+  p {
+    color: #fff;
+  }
+  form {
+    @include theme($border-color: $blue);
+  }
+}
+
+footer {
+  background-color: black;
+  height: auto;
+  p {
+    margin: 0;
+    text-align: center;
+    padding: 2em;
+    color: #fff;
+  }
 }

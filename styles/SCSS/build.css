@@ -1,18 +1,134 @@
 .page-header {
   background-image: url();
-  background-color: #312152;
+  background-color: black;
   background-size: cover;
-  height: 40vh;
+  height: 300px;
 }
 .page-header .heading {
-  font-family: 'Gruppo';
+  font-family: "Gruppo";
   text-align: center;
-  padding-top: 16vh;
+  padding-top: 3em;
 }
 
 h1 {
   color: aliceblue;
   text-align: center;
+}
+
+#about {
+  background-image: url(/images/background-gradient-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#about .summary {
+  border: 2px solid #ba0d0d;
+  background: none;
+  padding: 1em;
+  margin-top: 2em;
+  box-shadow: 2px 2px 5px 0px black;
+  color: #fff;
+  min-width: 436px;
+  box-shadow: 2px 2px 5px 0px black;
+}
+#about .skills {
+  border: 2px solid #fb9713;
+  background: none;
+  padding: 1em;
+  margin-top: 2em;
+  box-shadow: 2px 2px 5px 0px black;
+  color: #fff;
+  min-width: 436px;
+  margin-bottom: 2em;
+}
+#about .skills td {
+  padding: 0.5em;
+}
+#about .skills td img {
+  height: 50px;
+}
+#about .work-history {
+  border: 2px solid #0f37af;
+  background: none;
+  padding: 1em;
+  margin-top: 2em;
+  box-shadow: 2px 2px 5px 0px black;
+  color: #fff;
+  min-width: 436px;
+  margin-bottom: 2em;
+}
+#about .work-history * {
+  background: none;
+  color: #fff;
+}
+
+#projects {
+  background-image: url(/images/background-gradient-4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#projects h4 {
+  color: #fff;
+  text-align: center;
+}
+#projects .red {
+  width: 18rem;
+  border: 2px solid #ba0d0d;
+  background: none;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  box-shadow: 2px 2px 5px 0px black;
+  color: #fff;
+}
+#projects .blue {
+  width: 18rem;
+  border: 2px solid #0f37af;
+  background: none;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  box-shadow: 2px 2px 5px 0px black;
+  color: #fff;
+}
+#projects .yellow {
+  width: 18rem;
+  border: 2px solid #fb9713;
+  background: none;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  box-shadow: 2px 2px 5px 0px black;
+  color: #fff;
+}
+
+#contact {
+  background-image: url(/images/background-gradient-2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 2em;
+}
+#contact p {
+  color: #fff;
+}
+#contact form {
+  border: 2px solid #0f37af;
+  background: none;
+  padding: 1em;
+  margin-top: 2em;
+  box-shadow: 2px 2px 5px 0px black;
+  color: #fff;
+  min-width: 436px;
+}
+
+footer {
+  background-color: black;
+  height: auto;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  padding: 2em;
+  color: #fff;
 }
 
 /*# sourceMappingURL=build.css.map */

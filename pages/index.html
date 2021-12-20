@@ -44,41 +44,82 @@
         <h1 class="heading">About</h1>
       </header>
       <!-- Content -->
-      <div class="container mt-4">
+      <div class="container">
         <div class="row justify-content-center">
-          <div class="col-8">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iure sapiente beatae quam nisi asperiores voluptates assumenda repellendus laborum eligendi labore aliquam enim tempore architecto, cum officia voluptatibus corrupti deleniti doloremque! Dignissimos, maiores possimus. Ducimus unde aspernatur a velit nemo.</p>
-            <div class="accordion accordion" id="accordionExample">
-              <div class="accordion-item shadow p-3">
+          <div class="col-10 col-md-11 summary">
+            <h3>Introduction</h3>
+            <p>My name is Yunis Sule and I am a second year student in Oulu University of Applied Sciences, studying Business Information Systems degree programme. I have worked in different industries varying from industrial maintenance to sales negotiation and never backed out from a challenge that could improve my skillset.</p>
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-10 col-md-5 work-history">
+            <h3>History</h3>
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item p-3">
                 <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Accordion Item #1</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><h4>Education</h4></button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-</code> class. This is the first item's accordion body.</div>
+                  <div class="accordion-body">
+                    <h5>Oulu University of Applied Sciences | 8.2020 -</h5>
+                    <a href="https://www.oamk.fi/opinto-opas/en/content-of-studies/curricula?koulutus=tik2021s&lk=s2021" target="_blank">BBA, Information Technology.</a>
+                    <br />
+                    <a href="https://opintopolku.fi/koski/opinnot/7e67ca1deb0049888ecb8f1184827bb4" target="_blank">Transcript of records</a>
+                  </div>
                 </div>
               </div>
-              <div class="accordion-item shadow p-3">
+              <div class="accordion-item p-3">
                 <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordion Item #2</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><h4>Work experience</h4></button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  <div class="accordion-body">
+                    <h5>University of Oulu | 25.10.2021 - 30.11.2021</h5>
+                    <p>MFA Support for guiding students and faculty members with activation and set up for Microsofts Multi-Factor Authentication.</p>
+                    <hr />
+                    <h5>ABC Carwash Limingantulli | 25.2.2021 - 24.10.2021</h5>
+                    <p>Customer service</p>
+                    <hr />
+                    <h5>Prime Sales Oy | 13.1.2020 - 31.7.2020</h5>
+                    <p>Sales negotiator for consumer products</p>
+                    <hr />
+                    <h5>Densiq Oy | 14.5.2018 - 30.6.2019</h5>
+                    <p>Industrial mechanic.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row justify-content-evenly mt-4 mb-4">
-          <div class="col-4">
+          <div class="col-10 col-md-5 skills">
             <h3>Skills</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab harum voluptatem placeat, itaque accusamus corrupti fugiat voluptatum quis ipsum.</p>
-          </div>
-          <div class="col-4">
-            <h3>Something</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio commodi architecto beatae cupiditate, deserunt quaerat laborum quae sint earum soluta id. Cupiditate, asperiores possimus.</p>
+            <h5>Frontend</h5>
+            <table>
+              <tr>
+                <td><img src="/images/css-3.png" alt="CSS logo" /></td>
+                <td><img src="/images/html-5.png" alt="HTML logo" /></td>
+                <td><img src="/images/js.png" alt="JavaScript logo" /></td>
+                <td><img src="/images/react.png" alt="ReactJS logo" /></td>
+                <td><img src="/images/sass.png" alt="SASS logo" /></td>
+              </tr>
+            </table>
+            <h5>Backend</h5>
+            <table>
+              <tr>
+                <td><img src="/images/php.png" alt="PHP logo" /></td>
+                <td><img src="/images/mysql.png" alt="" /></td>
+              </tr>
+            </table>
+            <h5>Software development</h5>
+            <table>
+              <tr>
+                <td><img src="/images/python.png" alt="Python logo" /></td>
+                <td><img src="/images/c-.png" alt="C++ logo" /></td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
+
       <!-- Content -->
     </section>
     <!-- Section 1 -->
@@ -91,21 +132,33 @@
       <!-- Content -->
       <div class="container mt-4 flex-grow-1">
         <div class="row justify-content-center">
-          <div class="col-6"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dolore accusantium quae sit aperiam doloremque nam nulla deleniti amet autem!</p></div>
+          <div class="col-6"><h4>Some of my recent school project</h4></div>
         </div>
       </div>
-      <div class="row justify-content-evenly mt-4 mb-4">
-        <div class="col-2">
-          <h3>project 1</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab harum voluptatem placeat, itaque accusamus corrupti fugiat voluptatum quis ipsum.</p>
+      <div class="row justify-content-evenly mt-4">
+        <div class="card col-2 red">
+          <img src="/images/TNT-frontpage.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h3 class="card-title">project 1</h3>
+            <p class="card-text">One page website that gets data from news API. Made with JavaScript, html and css.</p>
+            <a href="https://github.com/YunisSule/JS-finalassignment-webtekniikat.git" target="_blank" class="btn btn-primary">To github</a>
+          </div>
         </div>
-        <div class="col-2">
-          <h3>project 2</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab harum voluptatem placeat, itaque accusamus corrupti fugiat voluptatum quis ipsum.</p>
+        <div class="card col-2 blue">
+          <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h3 class="card-title">project 2</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
-        <div class="col-2">
-          <h3>project 3</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab harum voluptatem placeat, itaque accusamus corrupti fugiat voluptatum quis ipsum.</p>
+        <div class="card col-2 yellow">
+          <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h3 class="card-title">project 3</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
       </div>
       <!-- Content -->
@@ -147,9 +200,8 @@
     <!-- Section 3 -->
 
     <!-- Footer -->
-    <footer class="container">
-      <hr />
-      <div class="row justify-content-center"><p class="col-2" style="text-align: center">&copy; Yunis Sule</p></div>
+    <footer>
+      <p>&copy; Yunis Sule</p>
     </footer>
     <!-- Footer -->
 
