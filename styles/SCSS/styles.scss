@@ -2,6 +2,7 @@ $primary-color: black;
 $red: rgb(186, 13, 13);
 $yellow: rgb(251, 151, 19);
 $blue: rgb(15, 55, 175);
+$dark: rgb(33, 37, 41);
 $shadow: 2px 2px 5px 0px black;
 
 @mixin theme($border-color: #fff, $background: none) {
@@ -11,7 +12,6 @@ $shadow: 2px 2px 5px 0px black;
   margin-top: 2em;
   box-shadow: $shadow;
   color: #fff;
-  min-width: 436px;
 }
 
 @mixin projects($border-color: none, $background: none) {
@@ -23,6 +23,12 @@ $shadow: 2px 2px 5px 0px black;
   margin-bottom: 2em;
   box-shadow: $shadow;
   color: #fff;
+}
+
+@mixin zoom-effect {
+  transition: 1s;
+  opacity: 0.3;
+  transform: scale(1.2);
 }
 
 .page-header {
@@ -54,11 +60,9 @@ h1 {
   .skills {
     @include theme($border-color: $yellow);
     margin-bottom: 2em;
-    td {
+    img {
       padding: 0.5em;
-      img {
-        height: 50px;
-      }
+      height: 50px;
     }
   }
   .work-history {
@@ -83,12 +87,56 @@ h1 {
   }
   .red {
     @include projects($border-color: $red);
+    .img-container {
+      overflow: hidden;
+    }
+    img:hover {
+      @include zoom-effect();
+    }
   }
   .blue {
     @include projects($border-color: $blue);
+    .img-container {
+      overflow: hidden;
+    }
+    img:hover {
+      @include zoom-effect();
+    }
   }
   .yellow {
     @include projects($border-color: $yellow);
+    .img-container {
+      overflow: hidden;
+    }
+    img:hover {
+      @include zoom-effect();
+    }
+  }
+}
+
+.modal-content {
+  display: contents !important;
+
+  .modal-body {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .close {
+      text-align: right;
+      svg {
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+      svg:hover {
+        fill: $red;
+      }
+    }
+    .project-modal-carousel {
+      margin: auto;
+      background-color: $dark;
+      border: 3px $dark solid;
+      border-radius: 5px;
+    }
   }
 }
 
