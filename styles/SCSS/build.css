@@ -8,11 +8,7 @@
   font-family: "Gruppo";
   text-align: center;
   padding-top: 3em;
-}
-
-h1 {
   color: aliceblue;
-  text-align: center;
 }
 
 #about {
@@ -55,6 +51,13 @@ h1 {
   background: none;
   color: #fff;
 }
+#about .work-history .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+#about .work-history .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
+}
 
 #projects {
   background-image: url(/images/background-gradient-4.jpg);
@@ -82,6 +85,7 @@ h1 {
   transition: 1s;
   opacity: 0.3;
   transform: scale(1.2);
+  cursor: pointer;
 }
 #projects .blue {
   width: 18rem;
@@ -100,6 +104,7 @@ h1 {
   transition: 1s;
   opacity: 0.3;
   transform: scale(1.2);
+  cursor: pointer;
 }
 #projects .yellow {
   width: 18rem;
@@ -118,6 +123,7 @@ h1 {
   transition: 1s;
   opacity: 0.3;
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .modal-content {
@@ -150,7 +156,7 @@ h1 {
   background-position: center;
   padding-bottom: 2em;
 }
-#contact p {
+#contact h4 {
   text-align: center;
   color: #fff;
 }

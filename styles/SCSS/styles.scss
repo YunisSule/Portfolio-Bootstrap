@@ -29,8 +29,10 @@ $shadow: 2px 2px 5px 0px black;
   transition: 1s;
   opacity: 0.3;
   transform: scale(1.2);
+  cursor: pointer;
 }
 
+// Styling for header
 .page-header {
   background-image: url();
   background-color: $primary-color;
@@ -40,15 +42,12 @@ $shadow: 2px 2px 5px 0px black;
     font-family: 'Gruppo';
     text-align: center;
     padding-top: 3em;
+    color: aliceblue;
   }
 }
-h1 {
-  color: aliceblue;
-  text-align: center;
-}
+// Styling for header ends
 
 // Styling for about page
-
 #about {
   background-image: url(/images/background-gradient-1.jpg);
   background-size: cover;
@@ -72,11 +71,18 @@ h1 {
       background: none;
       color: #fff;
     }
+    .accordion-button::after {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+    .accordion-button:not(.collapsed)::after {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      transform: rotate(-180deg);
+    }
   }
 }
+// Styling for about page ends
 
 // Styling for projects page
-
 #projects {
   background-image: url(/images/background-gradient-4.jpg);
   background-size: cover;
@@ -116,11 +122,9 @@ h1 {
 
 .modal-content {
   display: contents !important;
-
   .modal-body {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
-
     .close {
       text-align: right;
       svg {
@@ -139,15 +143,15 @@ h1 {
     }
   }
 }
+// Styling for projects page ends
 
 // Styling for contact page
-
 #contact {
   background-image: url(/images/background-gradient-2.jpg);
   background-size: cover;
   background-position: center;
   padding-bottom: 2em;
-  p {
+  h4 {
     text-align: center;
     color: #fff;
   }
@@ -155,7 +159,9 @@ h1 {
     @include theme($border-color: $blue);
   }
 }
+// Styling for contact page ends
 
+// Styling for footer
 footer {
   background-color: black;
   height: auto;
@@ -166,3 +172,4 @@ footer {
     color: #fff;
   }
 }
+// Styling for footer ends
