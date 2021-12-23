@@ -87,36 +87,31 @@ $shadow: 2px 2px 5px 0px black;
   background-image: url(/images/background-gradient-4.jpg);
   background-size: cover;
   background-position: center;
+  // .img-container {
+  //   overflow: hidden;
+  //   img:hover {
+  //     @include zoom-effect();
+  //   }
+  // }
   h4 {
     color: #fff;
     text-align: center;
   }
-  .red {
+  .project-1 {
     @include projects($border-color: $red);
-    .img-container {
-      overflow: hidden;
-    }
-    img:hover {
-      @include zoom-effect();
-    }
   }
-  .blue {
+  .project-2 {
     @include projects($border-color: $blue);
-    .img-container {
-      overflow: hidden;
-    }
-    img:hover {
-      @include zoom-effect();
-    }
   }
-  .yellow {
+  .project-3 {
     @include projects($border-color: $yellow);
-    .img-container {
-      overflow: hidden;
-    }
-    img:hover {
-      @include zoom-effect();
-    }
+  }
+}
+
+*[class*='project-'] > .img-container {
+  overflow: hidden;
+  img:hover {
+    @include zoom-effect();
   }
 }
 

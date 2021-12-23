@@ -68,7 +68,7 @@
   color: #fff;
   text-align: center;
 }
-#projects .red {
+#projects .project-1 {
   width: 18rem;
   border: 2px solid #ba0d0d;
   background: none;
@@ -78,16 +78,7 @@
   box-shadow: 2px 2px 5px 0px black;
   color: #fff;
 }
-#projects .red .img-container {
-  overflow: hidden;
-}
-#projects .red img:hover {
-  transition: 1s;
-  opacity: 0.3;
-  transform: scale(1.2);
-  cursor: pointer;
-}
-#projects .blue {
+#projects .project-2 {
   width: 18rem;
   border: 2px solid #0f37af;
   background: none;
@@ -97,16 +88,7 @@
   box-shadow: 2px 2px 5px 0px black;
   color: #fff;
 }
-#projects .blue .img-container {
-  overflow: hidden;
-}
-#projects .blue img:hover {
-  transition: 1s;
-  opacity: 0.3;
-  transform: scale(1.2);
-  cursor: pointer;
-}
-#projects .yellow {
+#projects .project-3 {
   width: 18rem;
   border: 2px solid #fb9713;
   background: none;
@@ -116,10 +98,11 @@
   box-shadow: 2px 2px 5px 0px black;
   color: #fff;
 }
-#projects .yellow .img-container {
+
+*[class*=project-] > .img-container {
   overflow: hidden;
 }
-#projects .yellow img:hover {
+*[class*=project-] > .img-container img:hover {
   transition: 1s;
   opacity: 0.3;
   transform: scale(1.2);
