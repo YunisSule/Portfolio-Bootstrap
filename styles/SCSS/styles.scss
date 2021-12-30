@@ -32,6 +32,17 @@ $shadow: 2px 2px 5px 0px black;
   cursor: pointer;
 }
 
+// Styling for navbar
+nav {
+  a {
+    text-decoration: none;
+    .nav-icon {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+}
+
 // Styling for header
 .page-header {
   background-image: url();
