@@ -12,6 +12,7 @@ $shadow: 2px 2px 5px 0px black;
   margin-top: 2em;
   box-shadow: $shadow;
   color: #fff;
+  border-radius: 5px;
 }
 
 @mixin projects($border-color: none, $background: none) {
