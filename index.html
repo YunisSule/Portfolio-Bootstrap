@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google font headre-->
+    <!-- Google font header-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet" />
-    <!-- Google font headre-->
+    <!-- Google font header-->
 
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/SCSS/build.css" />
@@ -22,16 +22,16 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#about-page">About</a>
+            <a class="nav-link" href="#projects-page">Projects</a>
+            <a class="nav-link" href="#contact-page">Contact</a>
           </div>
           <a href="https://www.linkedin.com/in/yunis-sule-8599a41b9/" target="_blank">
             <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0a66c2" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -42,7 +42,7 @@
             </svg>
           </a>
           <a href="https://github.com/YunisSule" target="_blank">
-            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#FFF" class="bi bi-github" viewBox="0 0 16 16">
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000" class="bi bi-github" viewBox="0 0 16 16">
               <path
                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
               />
@@ -54,126 +54,142 @@
     <!-- Navbar ends -->
 
     <!-- Section 1 -->
-    <section id="about" class="min-vh-100">
+    <section id="about-page" class="min-vh-100">
       <header class="page-header">
         <h1 class="heading">About</h1>
       </header>
       <!-- Content -->
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-10 col-md-11 summary">
-            <h3>Introduction</h3>
-            <p>My name is Yunis Sule and I'm a second year student at Oulu University of Applied Sciences, studying Business Information Systems degree programme. I’m at an early stage in my career as a software/web developer and currently searching positions as a junior frontend/full-stack developer. My can-do attitude and excellent work ethic makes me a great addition to any software development team!</p>
+      <div id="about">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-11 summary">
+              <h3>Introduction</h3>
+              <p>
+                My name is Yunis Sule and I'm a second year student at Oulu University of Applied Sciences, studying Business Information Systems degree programme. I’m at an early stage in my career as a software/web developer and currently searching positions as a junior frontend/full-stack developer. My can-do attitude and excellent work ethic makes me a great addition to any software
+                development team!
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-around">
-          <div class="col-10 col-md-5 work-history">
-            <h3>History</h3>
-            <div class="accordion accordion-flush" id="accordionExample">
-              <div class="accordion-item p-3">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><h4>Education</h4></button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <h5>Oulu University of Applied Sciences | 8.2020 -</h5>
-                    <a href="https://www.oamk.fi/opinto-opas/en/content-of-studies/curricula?koulutus=tik2021s&lk=s2021" target="_blank">BBA, Information Technology.</a>
+          <div class="row justify-content-around">
+            <div class="col-10 col-md-5 work-history">
+              <h3>History</h3>
+              <div class="accordion accordion-flush" id="accordionExample">
+                <div class="accordion-item p-3">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><h4>Education</h4></button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <h5>Oulu University of Applied Sciences | 8.2020 -</h5>
+                      <a href="https://www.oamk.fi/opinto-opas/en/content-of-studies/curricula?koulutus=tik2021s&lk=s2021" target="_blank">BBA, Information Technology.</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item p-3">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><h4>Work experience</h4></button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <h5>University of Oulu | 25.10.2021 - 30.11.2021</h5>
+                      <p>MFA Support for guiding students and faculty members with activation and set up for Microsofts Multi-Factor Authentication.</p>
+                      <hr />
+                      <h5>ABC Carwash Limingantulli | 25.2.2021 - 24.10.2021</h5>
+                      <p>Customer service</p>
+                      <hr />
+                      <h5>Prime Sales Oy | 13.1.2020 - 31.7.2020</h5>
+                      <p>Sales negotiator for consumer products</p>
+                      <hr />
+                      <h5>Densiq Oy | 14.5.2018 - 30.6.2019</h5>
+                      <p>Industrial mechanic.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item p-3">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><h4>Work experience</h4></button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <h5>University of Oulu | 25.10.2021 - 30.11.2021</h5>
-                    <p>MFA Support for guiding students and faculty members with activation and set up for Microsofts Multi-Factor Authentication.</p>
-                    <hr />
-                    <h5>ABC Carwash Limingantulli | 25.2.2021 - 24.10.2021</h5>
-                    <p>Customer service</p>
-                    <hr />
-                    <h5>Prime Sales Oy | 13.1.2020 - 31.7.2020</h5>
-                    <p>Sales negotiator for consumer products</p>
-                    <hr />
-                    <h5>Densiq Oy | 14.5.2018 - 30.6.2019</h5>
-                    <p>Industrial mechanic.</p>
-                  </div>
+            </div>
+            <div class="col-10 col-md-5 skills">
+              <div>
+                <h3>Skills</h3>
+                <h5>Frontend</h5>
+                <img src="/images/css-3.png" alt="CSS logo" />
+                <img src="/images/html-5.png" alt="HTML logo" />
+                <img src="/images/js.png" alt="JavaScript logo" />
+                <img src="/images/react.png" alt="ReactJS logo" />
+                <img src="/images/sass.png" alt="SASS logo" />
+              </div>
+              <div class="skill-container">
+                <div>
+                  <h5>Backend</h5>
+                  <img src="/images/php.png" alt="PHP logo" />
+                  <img src="/images/icons8-nodejs-96.png" alt="NodeJS logo" />
+                </div>
+                <div>
+                  <h5>Database</h5>
+                  <img src="/images/mysql.png" alt="" />
+                  <img src="/images/mongodb_plain_wordmark_logo_icon_146423.png" alt="" />
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-10 col-md-5 skills">
-            <div>
-              <h3>Skills</h3>
-              <h5>Frontend</h5>
-              <img src="/images/css-3.png" alt="CSS logo" />
-              <img src="/images/html-5.png" alt="HTML logo" />
-              <img src="/images/js.png" alt="JavaScript logo" />
-              <img src="/images/react.png" alt="ReactJS logo" />
-              <img src="/images/sass.png" alt="SASS logo" />
-            </div>
-            <div>
-              <h5>Backend</h5>
-              <img src="/images/php.png" alt="PHP logo" />
-              <img src="/images/mysql.png" alt="" />
-            </div>
-            <div>
-              <h5>Basics</h5>
-              <img src="/images/python.png" alt="Python logo" />
-              <img src="/images/c-.png" alt="C++ logo" />
-              <img src="/images/c-program.png" alt="C logo" />
+              <div>
+                <h5>Basics</h5>
+                <img src="/images/python.png" alt="Python logo" />
+                <img src="/images/c-.png" alt="C++ logo" />
+                <img src="/images/c-program.png" alt="C logo" />
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- Content ends -->
     </section>
     <!-- Section 1 ends -->
 
     <!-- Section 2 -->
-    <section id="projects" class="min-vh-100">
+    <section id="projects-page" class="min-vh-100">
       <header class="page-header">
         <h1 class="heading">Projects</h1>
       </header>
 
       <!-- Content 2 -->
-      <div class="container mt-4 flex-grow-1">
-        <div class="row justify-content-center">
-          <div class="col-6"><h4>Some of my recent school projects</h4></div>
+      <div id="projects">
+        <div class="container flex-grow-1">
+          <div class="row justify-content-center">
+            <div class="col-6"><h4>Some of my recent school projects</h4></div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4">
+          <div class="card col-2 project-1">
+            <div class="img-container"><img src="/images/TNT-frontpage.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#project-1-modal" /></div>
+            <div class="card-body">
+              <h3 class="card-title">project 1</h3>
+              <p class="card-text">
+                One page website that gets data from news <span><a href="https://newsapi.org/" target="_blank">API.</a></span> Made with JavaScript, html and css.
+              </p>
+              <a href="https://github.com/YunisSule/JS-finalassignment-webtekniikat.git" target="_blank" class="btn btn-outline-light">To github</a>
+            </div>
+          </div>
+          <div class="card col-2 project-2">
+            <div class="img-container"><img src="/images/FribaShop-frontpage.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#project-2-modal" /></div>
+            <div class="card-body">
+              <h3 class="card-title">project 2</h3>
+              <p class="card-text">Online store project. Frontend is made with ReactJs and backed with PHP. This project had 4 contributors.</p>
+              <a href="https://github.com/YunisSule/verkkopalveluprojekti2021-frontend.git" class="btn btn-outline-light" target="_blank">Frontend</a>
+              <a href="https://github.com/YunisSule/verkkopalveluprojekti2021-backend.git" class="btn btn-outline-light" target="_blank">Backend</a>
+            </div>
+          </div>
+          <div class="card col-2 project-3">
+            <div class="img-container"><img src="/images/foodRecipeApp1.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#project-3-modal" /></div>
+            <div class="card-body">
+              <h3 class="card-title">project 3</h3>
+              <p class="card-text">
+                Single page app made with ReactJS for searching food recipes from food recipe <span><a href="https://www.themealdb.com/api.php" target="_blank">API.</a></span>
+              </p>
+              <a href="https://github.com/YunisSule/P-A-2.git" class="btn btn-outline-light">To github</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row justify-content-evenly mt-4">
-        <div class="card col-2 project-1">
-          <div class="img-container"><img src="/images/TNT-frontpage.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#project-1-modal" /></div>
-          <div class="card-body">
-            <h3 class="card-title">project 1</h3>
-            <p class="card-text">
-              One page website that gets data from news <span><a href="https://newsapi.org/" target="_blank">API.</a></span> Made with JavaScript, html and css.
-            </p>
-            <a href="https://github.com/YunisSule/JS-finalassignment-webtekniikat.git" target="_blank" class="btn btn-outline-light">To github</a>
-          </div>
-        </div>
-        <div class="card col-2 project-2">
-          <div class="img-container"><img src="/images/FribaShop-frontpage.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#project-2-modal" /></div>
-          <div class="card-body">
-            <h3 class="card-title">project 2</h3>
-            <p class="card-text">Online store project. Frontend is made with ReactJs and backed with PHP. This project had 4 contributors.</p>
-            <a href="https://github.com/YunisSule/verkkopalveluprojekti2021-frontend.git" class="btn btn-outline-light" target="_blank">Frontend</a>
-            <a href="https://github.com/YunisSule/verkkopalveluprojekti2021-backend.git" class="btn btn-outline-light" target="_blank">Backend</a>
-          </div>
-        </div>
-        <div class="card col-2 project-3">
-          <div class="img-container"><img src="/images/foodRecipeApp1.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#project-3-modal" /></div>
-          <div class="card-body">
-            <h3 class="card-title">project 3</h3>
-            <p class="card-text">
-              Single page app made with ReactJS for searching food recipes from food recipe <span><a href="https://www.themealdb.com/api.php" target="_blank">API.</a></span>
-            </p>
-            <a href="https://github.com/YunisSule/P-A-2.git" class="btn btn-outline-light">To github</a>
-          </div>
-        </div>
-      </div>
+
       <!-- Content 2 ends-->
 
       <!-- Modal for project 1 -->
@@ -338,34 +354,36 @@
     <!-- Section 2 ends -->
 
     <!-- Section 3 -->
-    <section id="contact" class="min-vh-100">
+    <section id="contact-page" class="min-vh-100">
       <header class="page-header">
         <h1 class="heading">Contact</h1>
       </header>
 
       <!-- Content 3 -->
-      <div class="container mt-4 flex-grow-1">
-        <div class="row justify-content-center">
-          <h4>Any questions? Feel free to contact me!</h4>
+      <div id="contact">
+        <div class="container flex-grow-1">
+          <div class="row justify-content-center">
+            <h4>Any questions? Feel free to contact me!</h4>
+          </div>
         </div>
-      </div>
-      <div class="container col-10 col-md-8">
-        <form name="contact" method="POST" data-netlify="true">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" name="message" id="message" rows="5"></textarea>
-          </div>
-          <div data-netlify-recaptcha="true"></div>
-          <button type="submit" class="btn btn-outline-primary mt-3">Submit</button>
-        </form>
+        <div class="container col-10 col-md-8">
+          <form name="contact" method="POST" data-netlify="true">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit" class="btn btn-outline-primary mt-3">Submit</button>
+          </form>
+        </div>
       </div>
       <!-- Content 3 ends -->
     </section>
@@ -373,7 +391,7 @@
 
     <!-- Footer -->
     <footer>
-      <p>&copy; Yunis Sule</p>
+      <p>&copy; Yunis Sule 2022</p>
     </footer>
     <!-- Footer ends -->
 

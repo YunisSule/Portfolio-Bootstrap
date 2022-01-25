@@ -1,3 +1,9 @@
+body {
+  background-image: url(/images/coding-gad6dcc31b_1920.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 nav a {
   text-decoration: none;
 }
@@ -7,9 +13,8 @@ nav a .nav-icon {
 }
 
 .page-header {
-  background-image: url();
   background-color: black;
-  background-size: cover;
+  opacity: 0.7;
   height: 300px;
 }
 .page-header .heading {
@@ -20,9 +25,8 @@ nav a .nav-icon {
 }
 
 #about {
-  background-image: url(/images/background-gradient-1.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: #212529;
+  padding: 2.5rem 0 2.5em 0;
 }
 #about .summary {
   border: 2px solid #ba0d0d;
@@ -48,6 +52,10 @@ nav a .nav-icon {
   padding: 0.5em;
   height: 50px;
 }
+#about .skills .skill-container {
+  display: flex;
+  gap: 20px;
+}
 #about .work-history {
   border: 2px solid #0f37af;
   background: none;
@@ -71,13 +79,13 @@ nav a .nav-icon {
 }
 
 #projects {
-  background-image: url(/images/background-gradient-4.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: #212529;
+  padding: 2.5rem 0 2.5em 0;
 }
 #projects h4 {
   color: #fff;
   text-align: center;
+  margin-top: 1.5rem;
 }
 #projects .project-1 {
   width: 18rem;
@@ -145,14 +153,13 @@ nav a .nav-icon {
 }
 
 #contact {
-  background-image: url(/images/background-gradient-2.jpg);
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 2em;
+  background-color: #212529;
+  padding: 2.5rem 0 2.5em 0;
 }
 #contact h4 {
   text-align: center;
   color: #fff;
+  margin-top: 1.5rem;
 }
 #contact form {
   border: 2px solid #0f37af;
@@ -165,14 +172,13 @@ nav a .nav-icon {
 }
 
 footer {
-  background-color: black;
+  background-color: #f8f9fa;
   height: auto;
 }
 footer p {
   margin: 0;
   text-align: center;
-  padding: 2em;
-  color: #fff;
+  color: #000;
 }
 
 /*# sourceMappingURL=build.css.map */

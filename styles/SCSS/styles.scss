@@ -3,6 +3,7 @@ $red: rgb(186, 13, 13);
 $yellow: rgb(251, 151, 19);
 $blue: rgb(15, 55, 175);
 $dark: rgb(33, 37, 41);
+$light: rgb(248, 249, 250);
 $shadow: 2px 2px 5px 0px black;
 
 @mixin theme($border-color: #fff, $background: none) {
@@ -33,6 +34,12 @@ $shadow: 2px 2px 5px 0px black;
   cursor: pointer;
 }
 
+body {
+  background-image: url(/images/coding-gad6dcc31b_1920.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 // Styling for navbar
 nav {
   a {
@@ -46,9 +53,8 @@ nav {
 
 // Styling for header
 .page-header {
-  background-image: url();
   background-color: $primary-color;
-  background-size: cover;
+  opacity: 0.7;
   height: 300px;
   .heading {
     font-family: 'Gruppo';
@@ -61,9 +67,12 @@ nav {
 
 // Styling for about page
 #about {
-  background-image: url(/images/background-gradient-1.jpg);
-  background-size: cover;
-  background-position: center;
+  // background-image: url(/images/background-gradient-1.jpg);
+  // background-size: cover;
+  // background-position: center;
+  background-color: $dark;
+  padding: 2.5rem 0 2.5em 0;
+
   .summary {
     @include theme($border-color: $red);
     box-shadow: $shadow;
@@ -74,6 +83,10 @@ nav {
     img {
       padding: 0.5em;
       height: 50px;
+    }
+    .skill-container {
+      display: flex;
+      gap: 20px;
     }
   }
   .work-history {
@@ -96,18 +109,15 @@ nav {
 
 // Styling for projects page
 #projects {
-  background-image: url(/images/background-gradient-4.jpg);
-  background-size: cover;
-  background-position: center;
-  // .img-container {
-  //   overflow: hidden;
-  //   img:hover {
-  //     @include zoom-effect();
-  //   }
-  // }
+  // background-image: url(/images/background-gradient-4.jpg);
+  // background-size: cover;
+  // background-position: center;
+  background-color: $dark;
+  padding: 2.5rem 0 2.5em 0;
   h4 {
     color: #fff;
     text-align: center;
+    margin-top: 1.5rem;
   }
   .project-1 {
     @include projects($border-color: $red);
@@ -154,13 +164,15 @@ nav {
 
 // Styling for contact page
 #contact {
-  background-image: url(/images/background-gradient-2.jpg);
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 2em;
+  // background-image: url(/images/background-gradient-2.jpg);
+  // background-size: cover;
+  // background-position: center;
+  background-color: $dark;
+  padding: 2.5rem 0 2.5em 0;
   h4 {
     text-align: center;
     color: #fff;
+    margin-top: 1.5rem;
   }
   form {
     @include theme($border-color: $blue);
@@ -170,13 +182,13 @@ nav {
 
 // Styling for footer
 footer {
-  background-color: black;
+  background-color: $light;
   height: auto;
   p {
     margin: 0;
     text-align: center;
-    padding: 2em;
-    color: #fff;
+
+    color: #000;
   }
 }
 // Styling for footer ends
