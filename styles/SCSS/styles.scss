@@ -114,6 +114,7 @@ nav {
   // background-position: center;
   background-color: $dark;
   padding: 2.5rem 0 2.5em 0;
+  margin: 0;
   h4 {
     color: #fff;
     text-align: center;
@@ -127,6 +128,9 @@ nav {
   }
   .project-3 {
     @include projects($border-color: $yellow);
+  }
+  .row {
+    margin: 0;
   }
 }
 

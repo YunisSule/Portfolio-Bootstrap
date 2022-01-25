@@ -81,6 +81,7 @@ nav a .nav-icon {
 #projects {
   background-color: #212529;
   padding: 2.5rem 0 2.5em 0;
+  margin: 0;
 }
 #projects h4 {
   color: #fff;
@@ -116,6 +117,9 @@ nav a .nav-icon {
   margin-bottom: 2em;
   box-shadow: 2px 2px 5px 0px black;
   color: #fff;
+}
+#projects .row {
+  margin: 0;
 }
 
 *[class*=project-] > .img-container {
