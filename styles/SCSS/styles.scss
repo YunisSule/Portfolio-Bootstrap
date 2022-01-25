@@ -11,6 +11,7 @@ $shadow: 2px 2px 5px 0px black;
   background: $background;
   padding: 1em;
   margin-top: 2em;
+  margin-bottom: 2em;
   box-shadow: $shadow;
   color: #fff;
   border-radius: 5px;
@@ -79,7 +80,7 @@ nav {
   }
   .skills {
     @include theme($border-color: $yellow);
-    margin-bottom: 2em;
+
     img {
       padding: 0.5em;
       height: 50px;
@@ -91,7 +92,7 @@ nav {
   }
   .work-history {
     @include theme($border-color: $blue);
-    margin-bottom: 2em;
+
     * {
       background: none;
       color: #fff;

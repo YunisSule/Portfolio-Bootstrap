@@ -33,6 +33,7 @@ nav a .nav-icon {
   background: none;
   padding: 1em;
   margin-top: 2em;
+  margin-bottom: 2em;
   box-shadow: 2px 2px 5px 0px black;
   color: #fff;
   border-radius: 5px;
@@ -43,10 +44,10 @@ nav a .nav-icon {
   background: none;
   padding: 1em;
   margin-top: 2em;
+  margin-bottom: 2em;
   box-shadow: 2px 2px 5px 0px black;
   color: #fff;
   border-radius: 5px;
-  margin-bottom: 2em;
 }
 #about .skills img {
   padding: 0.5em;
@@ -61,10 +62,10 @@ nav a .nav-icon {
   background: none;
   padding: 1em;
   margin-top: 2em;
+  margin-bottom: 2em;
   box-shadow: 2px 2px 5px 0px black;
   color: #fff;
   border-radius: 5px;
-  margin-bottom: 2em;
 }
 #about .work-history * {
   background: none;
@@ -170,6 +171,7 @@ nav a .nav-icon {
   background: none;
   padding: 1em;
   margin-top: 2em;
+  margin-bottom: 2em;
   box-shadow: 2px 2px 5px 0px black;
   color: #fff;
   border-radius: 5px;
